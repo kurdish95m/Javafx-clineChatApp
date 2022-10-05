@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="newpackage.UserController">
+   <children>
+      <VBox alignment="CENTER" layoutX="98.0" layoutY="62.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox>
+               <children>
+                  <Label prefWidth="100.0" text="Username" />
+                  <TextField fx:id="textFieldUsername" prefWidth="200.0" promptText="username" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefWidth="100.0" text="ip address" />
+                  <TextField fx:id="textFieldIpaddress" prefWidth="200.0" promptText="172.16.32.101" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefWidth="100.0" text="Port number" />
+                  <TextField fx:id="textFieldPortNumber" prefWidth="200.0" promptText="8899" />
+               </children>
+            </HBox>
+            <Button fx:id="buttonLogin" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Login" />
+         </children>
+         <padding>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
